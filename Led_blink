@@ -1,0 +1,59 @@
+
+/* 
+  Project: Multi-Mode LED Blink
+  Description: LED blinks at different speeds
+*/
+
+int mode = 0; // Change this value to test different speeds
+
+void setup() {
+  pinMode(13, OUTPUT);
+}
+
+void loop() {
+
+  if (mode == 0) {
+    // Very Slow Blink (2000 ms)
+    digitalWrite(13, HIGH);
+    delay(2000);
+    digitalWrite(13, LOW);
+    delay(2000);
+  }
+
+  else if (mode == 1) {
+    // Slow Blink (1000 ms)
+    digitalWrite(13, HIGH);
+    delay(1000);
+    digitalWrite(13, LOW);
+    delay(1000);
+  }
+
+  else if (mode == 2) {
+    // Fast Blink (500 ms)
+    digitalWrite(13, HIGH);
+    delay(500);
+    digitalWrite(13, LOW);
+    delay(500);
+  }
+
+  else if (mode == 3) {
+    // Very Fast Blink (200 ms)
+    digitalWrite(13, HIGH);
+    delay(200);
+    digitalWrite(13, LOW);
+    delay(200);
+  }
+
+  else if (mode == 4) {
+    // Least Visible Blink (~50 ms)
+    digitalWrite(13, HIGH);
+    delay(50);
+    digitalWrite(13, LOW);
+    delay(50);
+  }
+}
+
+
+
+
+
